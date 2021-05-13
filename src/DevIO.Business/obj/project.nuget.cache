@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LbA4wzUtd1vc8SI42I209usXkV6T46RoF2qPoFruVi7sxjvAiNFr0ZBmPQZFbSIGpio/4YLI8OYbdyZOGV3Ouw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nadal\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}
