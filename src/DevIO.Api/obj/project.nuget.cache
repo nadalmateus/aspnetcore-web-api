@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZDKSBpVjyfwfzSFRgJpeXmbPm2/Fm/+FYyw2ih+PYCwxOddC3zK7Pwkgj1oLqs3hVyyOrZ0H2wxx3mUU6MTC7g==",
+  "dgSpecHash": "2Veb1DJr5NNti61ksKdqtGP1hcjGFNQUsV/DPrhyfQOJSjqaY9ij29kd70VOE0oUo0CowQBsjCnkaJYNwd+nGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Api\\DevIO.Api.csproj",
+  "projectFilePath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\DevIO.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nadal\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\3.1.1\\aspnetcore.healthchecks.sqlserver.3.1.1.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\aspnetcore.healthchecks.ui\\3.1.0\\aspnetcore.healthchecks.ui.3.1.0.nupkg.sha512",
@@ -193,7 +193,11 @@
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\yamldotnet\\6.0.0\\yamldotnet.6.0.0.nupkg.sha512"
+    "C:\\Users\\nadal\\.nuget\\packages\\yamldotnet\\6.0.0\\yamldotnet.6.0.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.17\\microsoft.netcore.app.host.win-x64.3.1.17.nupkg.sha512"
   ],
   "logs": []
 }

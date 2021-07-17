@@ -1,38 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Api\\DevIO.Api.csproj": {}
+    "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\DevIO.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Api\\DevIO.Api.csproj": {
+    "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\DevIO.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectUniqueName": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\DevIO.Api.csproj",
         "projectName": "DevIO.Api",
-        "projectPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\DevIO.Api.csproj",
         "packagesPath": "C:\\Users\\nadal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Api\\obj\\",
+        "outputPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nadal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\nadal\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj": {
-                "projectPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj"
+              "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj"
               },
-              "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\DevIO.Data.csproj": {
-                "projectPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\DevIO.Data.csproj"
+              "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\DevIO.Data.csproj": {
+                "projectPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\DevIO.Data.csproj"
               }
             }
           }
@@ -130,6 +128,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.17, 3.1.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -138,28 +154,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj": {
+    "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectUniqueName": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj",
         "projectName": "DevIO.Business",
-        "projectPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj",
         "packagesPath": "C:\\Users\\nadal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\obj\\",
+        "outputPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nadal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\nadal\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -193,41 +207,53 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\DevIO.Data.csproj": {
+    "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\DevIO.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectUniqueName": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\DevIO.Data.csproj",
         "projectName": "DevIO.Data",
-        "projectPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\DevIO.Data.csproj",
         "packagesPath": "C:\\Users\\nadal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\obj\\",
+        "outputPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nadal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\nadal\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj": {
-                "projectPath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Business\\DevIO.Business.csproj"
+              "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Business\\DevIO.Business.csproj"
               }
             }
           }
@@ -265,12 +291,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
