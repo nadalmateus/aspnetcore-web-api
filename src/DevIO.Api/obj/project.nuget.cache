@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2Veb1DJr5NNti61ksKdqtGP1hcjGFNQUsV/DPrhyfQOJSjqaY9ij29kd70VOE0oUo0CowQBsjCnkaJYNwd+nGw==",
+  "dgSpecHash": "8pnXzk3r5KeXVd2ad2KG+qA8lNeRtoXY5K5JiwRSQkUJUKVB2uTyNieLMCO4Lb2i2LbhZ8AHiDMoE8FQBP9zmw==",
   "success": true,
   "projectFilePath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Api\\DevIO.Api.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,8 @@
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.0\\microsoft.aspnetcore.http.features.2.1.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.4\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.4.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.4\\microsoft.aspnetcore.identity.ui.3.1.4.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.0.0\\microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.20\\microsoft.aspnetcore.jsonpatch.3.1.20.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.20\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.20.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\4.1.1\\microsoft.aspnetcore.mvc.versioning.apiexplorer.4.1.1.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.1.0\\microsoft.aspnetcore.webutilities.2.1.0.nupkg.sha512",
@@ -33,6 +34,7 @@
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.data.sqlclient\\1.1.1\\microsoft.data.sqlclient.1.1.1.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.3\\microsoft.data.sqlite.core.3.1.3.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.3\\microsoft.dotnet.platformabstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers\\0.3.246501\\microsoft.dotnet.upgradeassistant.extensions.default.analyzers.0.3.246501.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.4\\microsoft.entityframeworkcore.3.1.4.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.4\\microsoft.entityframeworkcore.abstractions.3.1.4.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.4\\microsoft.entityframeworkcore.analyzers.3.1.4.nupkg.sha512",
@@ -84,6 +86,7 @@
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\portable.bouncycastle\\1.8.1.3\\portable.bouncycastle.1.8.1.3.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -193,11 +196,7 @@
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\yamldotnet\\6.0.0\\yamldotnet.6.0.0.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.17\\microsoft.netcore.app.host.win-x64.3.1.17.nupkg.sha512"
+    "C:\\Users\\nadal\\.nuget\\packages\\yamldotnet\\6.0.0\\yamldotnet.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

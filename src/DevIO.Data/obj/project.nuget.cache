@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WgT8AEvgf6kadQpXhMyYzoDYJJSgsdm0paawMnLv15Ef2f5LifUDFqClBV3+Auw5fewpnKc9m5NXWdMklVestA==",
+  "dgSpecHash": "CK9YsKdrb3qRsLXhgAMHPQSVAn/Q3uzDKiJm3Tkfkbpse9dKU5LO7AGbqAx+dmChFoFMU8e4zMqPZkvgLVteDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nadal\\OneDrive\\Área de Trabalho\\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-03 - API Completa Versao .NET Core3.1\\src\\DevIO.Data\\DevIO.Data.csproj",
+  "projectFilePath": "C:\\Dev\\aspnetcore-web-api\\src\\DevIO.Data\\DevIO.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nadal\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -90,7 +90,10 @@
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\nadal\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\nadal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }
