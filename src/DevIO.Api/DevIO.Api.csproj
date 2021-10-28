@@ -15,7 +15,7 @@
     <PackageReference Include="Elmah.Io.AspNetCore.HealthChecks" Version="3.8.103" />
     <PackageReference Include="Elmah.Io.Extensions.Logging" Version="3.6.62" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
