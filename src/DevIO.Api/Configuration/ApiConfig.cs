@@ -31,7 +31,6 @@ namespace DevIO.Api.Configuration
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
-
             });
 
             services.AddCors(options =>
@@ -39,9 +38,9 @@ namespace DevIO.Api.Configuration
                 options.AddPolicy("Development",
                     builder =>
                         builder
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader());
 
 
                 options.AddPolicy("Production",
@@ -86,11 +85,11 @@ namespace DevIO.Api.Configuration
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHealthChecks("/api/hc", new HealthCheckOptions()
-                {
-                    Predicate = _ => true,
-                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-                });
+                endpoints.MapHealthChecks("/api/hc",
+                    new HealthCheckOptions
+                    {
+                        Predicate = _ => true, ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                    });
                 endpoints.MapHealthChecksUI(options =>
                 {
                     options.UIPath = "/api/hc-ui";
@@ -100,7 +99,6 @@ namespace DevIO.Api.Configuration
                     options.UseRelativeResourcesPath = false;
                     options.UseRelativeWebhookPath = false;
                 });
-
             });
 
             return app;

@@ -7,8 +7,7 @@ namespace DevIO.Api.ViewModels
     //[ModelBinder(typeof(JsonWithFilesFormDataModelBinder), Name = "produto")]
     public class ProdutoImagemViewModel
     {
-        [Key]
-        public Guid Id { get; set; }
+        [Key] public Guid Id { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
 
@@ -29,12 +28,10 @@ namespace DevIO.Api.ViewModels
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Valor { get; set; }
 
-        [ScaffoldColumn(false)]
-        public DateTime DataCadastro { get; set; }
+        [ScaffoldColumn(false)] public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
 
-        [ScaffoldColumn(false)]
-        public string NomeFornecedor { get; set; }
+        [ScaffoldColumn(false)] public string NomeFornecedor { get; set; }
     }
 }

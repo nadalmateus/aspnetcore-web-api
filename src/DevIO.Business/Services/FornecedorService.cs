@@ -9,12 +9,12 @@ namespace DevIO.Business.Services
 {
     public class FornecedorService : BaseService, IFornecedorService
     {
-        private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IEnderecoRepository _enderecoRepository;
+        private readonly IFornecedorRepository _fornecedorRepository;
 
-        public FornecedorService(IFornecedorRepository fornecedorRepository, 
-                                 IEnderecoRepository enderecoRepository,
-                                 INotificador notificador) : base(notificador)
+        public FornecedorService(IFornecedorRepository fornecedorRepository,
+            IEnderecoRepository enderecoRepository,
+            INotificador notificador) : base(notificador)
         {
             _fornecedorRepository = fornecedorRepository;
             _enderecoRepository = enderecoRepository;
@@ -22,8 +22,11 @@ namespace DevIO.Business.Services
 
         public async Task<bool> Adicionar(Fornecedor fornecedor)
         {
-            if (!ExecutarValidacao(new FornecedorValidation(), fornecedor) 
-                || !ExecutarValidacao(new EnderecoValidation(), fornecedor.Endereco)) return false;
+            if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)
+                || !ExecutarValidacao(new EnderecoValidation(), fornecedor.Endereco))
+            {
+                return false;
+            }
 
             if (_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento).Result.Any())
             {
@@ -37,9 +40,13 @@ namespace DevIO.Business.Services
 
         public async Task<bool> Atualizar(Fornecedor fornecedor)
         {
-            if (!ExecutarValidacao(new FornecedorValidation(), fornecedor)) return false;
+            if (!ExecutarValidacao(new FornecedorValidation(), fornecedor))
+            {
+                return false;
+            }
 
-            if (_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento && f.Id != fornecedor.Id).Result.Any())
+            if (_fornecedorRepository.Buscar(f => f.Documento == fornecedor.Documento && f.Id != fornecedor.Id).Result
+                .Any())
             {
                 Notificar("Já existe um fornecedor com este documento infomado.");
                 return false;
@@ -51,7 +58,10 @@ namespace DevIO.Business.Services
 
         public async Task AtualizarEndereco(Endereco endereco)
         {
-            if (!ExecutarValidacao(new EnderecoValidation(), endereco)) return;
+            if (!ExecutarValidacao(new EnderecoValidation(), endereco))
+            {
+                return;
+            }
 
             await _enderecoRepository.Atualizar(endereco);
         }

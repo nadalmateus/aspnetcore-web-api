@@ -19,15 +19,15 @@ namespace DevIO.Api.V1.Controllers
     [Route("api/v{version:apiVersion}/produtos")]
     public class ProdutosController : MainController
     {
+        private readonly IMapper _mapper;
         private readonly IProdutoRepository _produtoRepository;
         private readonly IProdutoService _produtoService;
-        private readonly IMapper _mapper;
 
-        public ProdutosController(INotificador notificador, 
-                                  IProdutoRepository produtoRepository, 
-                                  IProdutoService produtoService, 
-                                  IMapper mapper,
-                                  IUser user) : base(notificador, user)
+        public ProdutosController(INotificador notificador,
+            IProdutoRepository produtoRepository,
+            IProdutoService produtoService,
+            IMapper mapper,
+            IUser user) : base(notificador, user)
         {
             _produtoRepository = produtoRepository;
             _produtoService = produtoService;
@@ -45,7 +45,10 @@ namespace DevIO.Api.V1.Controllers
         {
             var produtoViewModel = await ObterProduto(id);
 
-            if (produtoViewModel == null) return NotFound();
+            if (produtoViewModel == null)
+            {
+                return NotFound();
+            }
 
             return produtoViewModel;
         }
@@ -54,7 +57,10 @@ namespace DevIO.Api.V1.Controllers
         [HttpPost]
         public async Task<ActionResult<ProdutoViewModel>> Adicionar(ProdutoViewModel produtoViewModel)
         {
-            if (!ModelState.IsValid) return CustomResponse(ModelState);
+            if (!ModelState.IsValid)
+            {
+                return CustomResponse(ModelState);
+            }
 
             var imagemNome = Guid.NewGuid() + "_" + produtoViewModel.Imagem;
             if (!UploadArquivo(produtoViewModel.ImagemUpload, imagemNome))
@@ -81,9 +87,14 @@ namespace DevIO.Api.V1.Controllers
             var produtoAtualizacao = await ObterProduto(id);
 
             if (string.IsNullOrEmpty(produtoViewModel.Imagem))
+            {
                 produtoViewModel.Imagem = produtoAtualizacao.Imagem;
+            }
 
-            if (!ModelState.IsValid) return CustomResponse(ModelState);
+            if (!ModelState.IsValid)
+            {
+                return CustomResponse(ModelState);
+            }
 
             if (produtoViewModel.ImagemUpload != null)
             {
@@ -113,7 +124,10 @@ namespace DevIO.Api.V1.Controllers
         {
             var produto = await ObterProduto(id);
 
-            if (produto == null) return NotFound();
+            if (produto == null)
+            {
+                return NotFound();
+            }
 
             await _produtoService.Remover(id);
 
@@ -154,7 +168,10 @@ namespace DevIO.Api.V1.Controllers
         [HttpPost("Adicionar")]
         public async Task<ActionResult<ProdutoViewModel>> AdicionarAlternativo(ProdutoImagemViewModel produtoViewModel)
         {
-            if (!ModelState.IsValid) return CustomResponse(ModelState);
+            if (!ModelState.IsValid)
+            {
+                return CustomResponse(ModelState);
+            }
 
             var imgPrefixo = Guid.NewGuid() + "_";
             if (!await UploadArquivoAlternativo(produtoViewModel.ImagemUpload, imgPrefixo))
@@ -167,7 +184,7 @@ namespace DevIO.Api.V1.Controllers
 
             return CustomResponse(produtoViewModel);
         }
-        
+
         [RequestSizeLimit(40000000)]
         //[DisableRequestSizeLimit]
         [HttpPost("imagem")]

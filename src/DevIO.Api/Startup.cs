@@ -13,8 +13,6 @@ namespace DevIO.Api
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
-
         public Startup(IHostEnvironment hostEnvironment)
         {
             var builder = new ConfigurationBuilder()
@@ -30,6 +28,8 @@ namespace DevIO.Api
 
             Configuration = builder.Build();
         }
+
+        public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {

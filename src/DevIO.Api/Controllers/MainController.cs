@@ -13,11 +13,8 @@ namespace DevIO.Api.Controllers
         private readonly INotificador _notificador;
         public readonly IUser AppUser;
 
-        protected Guid UsuarioId { get; set; }
-        protected bool UsuarioAutenticado { get; set; }
-
         protected MainController(INotificador notificador,
-                                 IUser appUser)
+            IUser appUser)
         {
             _notificador = notificador;
             AppUser = appUser;
@@ -29,6 +26,9 @@ namespace DevIO.Api.Controllers
             }
         }
 
+        protected Guid UsuarioId { get; set; }
+        protected bool UsuarioAutenticado { get; set; }
+
         protected bool OperacaoValida()
         {
             return !_notificador.TemNotificacao();
@@ -38,25 +38,21 @@ namespace DevIO.Api.Controllers
         {
             if (OperacaoValida())
             {
-                return Ok(new
-                {
-                    success = true,
-                    data = result
-                });
+                return Ok(new { success = true, data = result });
             }
 
-            return BadRequest(new
-            {
-                success = false,
-                errors = _notificador.ObterNotificacoes().Select(n => n.Mensagem)
-            });
+            return BadRequest(
+                new { success = false, errors = _notificador.ObterNotificacoes().Select(n => n.Mensagem) });
         }
 
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
         {
-            if (!modelState.IsValid) NotificarErroModelInvalida(modelState);
-            return CustomResponse();
+            if (!modelState.IsValid)
+            {
+                NotificarErroModelInvalida(modelState);
+            }
 
+            return CustomResponse();
         }
 
         protected void NotificarErroModelInvalida(ModelStateDictionary modelState)

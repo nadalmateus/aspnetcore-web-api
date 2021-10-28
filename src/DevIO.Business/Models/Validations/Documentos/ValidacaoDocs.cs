@@ -11,7 +11,11 @@ namespace DevIO.Business.Models.Validations.Documentos
         {
             var cpfNumeros = Utils.ApenasNumeros(cpf);
 
-            if (!TamanhoValido(cpfNumeros)) return false;
+            if (!TamanhoValido(cpfNumeros))
+            {
+                return false;
+            }
+
             return !TemDigitosRepetidos(cpfNumeros) && TemDigitosValidos(cpfNumeros);
         }
 
@@ -24,16 +28,8 @@ namespace DevIO.Business.Models.Validations.Documentos
         {
             string[] invalidNumbers =
             {
-                "00000000000",
-                "11111111111",
-                "22222222222",
-                "33333333333",
-                "44444444444",
-                "55555555555",
-                "66666666666",
-                "77777777777",
-                "88888888888",
-                "99999999999"
+                "00000000000", "11111111111", "22222222222", "33333333333", "44444444444", "55555555555",
+                "66666666666", "77777777777", "88888888888", "99999999999"
             };
             return invalidNumbers.Contains(valor);
         }
@@ -60,7 +56,11 @@ namespace DevIO.Business.Models.Validations.Documentos
         {
             var cnpjNumeros = Utils.ApenasNumeros(cpnj);
 
-            if (!TemTamanhoValido(cnpjNumeros)) return false;
+            if (!TemTamanhoValido(cnpjNumeros))
+            {
+                return false;
+            }
+
             return !TemDigitosRepetidos(cnpjNumeros) && TemDigitosValidos(cnpjNumeros);
         }
 
@@ -73,16 +73,8 @@ namespace DevIO.Business.Models.Validations.Documentos
         {
             string[] invalidNumbers =
             {
-                "00000000000000",
-                "11111111111111",
-                "22222222222222",
-                "33333333333333",
-                "44444444444444",
-                "55555555555555",
-                "66666666666666",
-                "77777777777777",
-                "88888888888888",
-                "99999999999999"
+                "00000000000000", "11111111111111", "22222222222222", "33333333333333", "44444444444444",
+                "55555555555555", "66666666666666", "77777777777777", "88888888888888", "99999999999999"
             };
             return invalidNumbers.Contains(valor);
         }
@@ -104,11 +96,23 @@ namespace DevIO.Business.Models.Validations.Documentos
 
     public class DigitoVerificador
     {
-        private string _numero;
         private const int Modulo = 11;
-        private readonly List<int> _multiplicadores = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9 };
+
+        private readonly List<int> _multiplicadores = new List<int>
+        {
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+        };
+
         private readonly IDictionary<int, string> _substituicoes = new Dictionary<int, string>();
-        private bool _complementarDoModulo = true;
+        private readonly bool _complementarDoModulo = true;
+        private string _numero;
 
         public DigitoVerificador(string numero)
         {
@@ -119,7 +123,9 @@ namespace DevIO.Business.Models.Validations.Documentos
         {
             _multiplicadores.Clear();
             for (var i = primeiroMultiplicador; i <= ultimoMultiplicador; i++)
+            {
                 _multiplicadores.Add(i);
+            }
 
             return this;
         }
@@ -130,6 +136,7 @@ namespace DevIO.Business.Models.Validations.Documentos
             {
                 _substituicoes[i] = substituto;
             }
+
             return this;
         }
 
@@ -151,10 +158,13 @@ namespace DevIO.Business.Models.Validations.Documentos
                 var produto = (int)char.GetNumericValue(_numero[i]) * _multiplicadores[m];
                 soma += produto;
 
-                if (++m >= _multiplicadores.Count) m = 0;
+                if (++m >= _multiplicadores.Count)
+                {
+                    m = 0;
+                }
             }
 
-            var mod = (soma % Modulo);
+            var mod = soma % Modulo;
             var resultado = _complementarDoModulo ? Modulo - mod : mod;
 
             return _substituicoes.ContainsKey(resultado) ? _substituicoes[resultado] : resultado.ToString();
@@ -173,6 +183,7 @@ namespace DevIO.Business.Models.Validations.Documentos
                     onlyNumber += s;
                 }
             }
+
             return onlyNumber.Trim();
         }
     }

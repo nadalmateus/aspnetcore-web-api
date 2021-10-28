@@ -20,28 +20,25 @@ namespace DevIO.Api.Configuration
             {
                 c.OperationFilter<SwaggerDefaultValues>();
 
-                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                {
-                    Description = "Insira o token JWT desta maneira: Bearer {seu token}",
-                    Name = "Authorization",
-                    Scheme = "Bearer",
-                    BearerFormat = "JWT",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.ApiKey
-                });
+                c.AddSecurityDefinition("Bearer",
+                    new OpenApiSecurityScheme
+                    {
+                        Description = "Insira o token JWT desta maneira: Bearer {seu token}",
+                        Name = "Authorization",
+                        Scheme = "Bearer",
+                        BearerFormat = "JWT",
+                        In = ParameterLocation.Header,
+                        Type = SecuritySchemeType.ApiKey
+                    });
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
                         new OpenApiSecurityScheme
                         {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
+                            Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
                         },
-                        new string[] {}
+                        new string[] { }
                     }
                 });
             });
@@ -49,7 +46,8 @@ namespace DevIO.Api.Configuration
             return services;
         }
 
-        public static IApplicationBuilder UseSwaggerConfig(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+        public static IApplicationBuilder UseSwaggerConfig(this IApplicationBuilder app,
+            IApiVersionDescriptionProvider provider)
         {
             //app.UseMiddleware<SwaggerAuthorizedMiddleware>();
             app.UseSwagger();
@@ -58,7 +56,8 @@ namespace DevIO.Api.Configuration
                 {
                     foreach (var description in provider.ApiVersionDescriptions)
                     {
-                        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
+                            description.GroupName.ToUpperInvariant());
                     }
                 });
             return app;
@@ -67,9 +66,12 @@ namespace DevIO.Api.Configuration
 
     public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
     {
-        readonly IApiVersionDescriptionProvider provider;
+        private readonly IApiVersionDescriptionProvider provider;
 
-        public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => this.provider = provider;
+        public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider)
+        {
+            this.provider = provider;
+        }
 
         public void Configure(SwaggerGenOptions options)
         {
@@ -79,15 +81,15 @@ namespace DevIO.Api.Configuration
             }
         }
 
-        static OpenApiInfo CreateInfoForApiVersion(ApiVersionDescription description)
+        private static OpenApiInfo CreateInfoForApiVersion(ApiVersionDescription description)
         {
-            var info = new OpenApiInfo()
+            var info = new OpenApiInfo
             {
                 Title = "API - desenvolvedor.io",
                 Version = description.ApiVersion.ToString(),
                 Description = "Esta API faz parte do curso REST com ASP.NET Core WebAPI.",
-                Contact = new OpenApiContact() { Name = "Eduardo Pires", Email = "contato@desenvolvedor.io" },
-                License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
+                Contact = new OpenApiContact { Name = "Eduardo Pires", Email = "contato@desenvolvedor.io" },
+                License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
             };
 
             if (description.IsDeprecated)

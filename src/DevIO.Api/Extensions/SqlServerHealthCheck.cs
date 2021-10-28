@@ -8,14 +8,15 @@ namespace DevIO.Api.Extensions
 {
     public class SqlServerHealthCheck : IHealthCheck
     {
-        readonly string _connection;
+        private readonly string _connection;
 
         public SqlServerHealthCheck(string connection)
         {
             _connection = connection;
         }
 
-        public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = new CancellationToken())
+        public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context,
+            CancellationToken cancellationToken = new())
         {
             try
             {
@@ -26,7 +27,9 @@ namespace DevIO.Api.Extensions
                     var command = connection.CreateCommand();
                     command.CommandText = "select count(id) from produtos";
 
-                    return Convert.ToInt32(await command.ExecuteScalarAsync(cancellationToken)) > 0 ? HealthCheckResult.Healthy() : HealthCheckResult.Unhealthy();
+                    return Convert.ToInt32(await command.ExecuteScalarAsync(cancellationToken)) > 0
+                        ? HealthCheckResult.Healthy()
+                        : HealthCheckResult.Unhealthy();
                 }
             }
             catch (Exception)

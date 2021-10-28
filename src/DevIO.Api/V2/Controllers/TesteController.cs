@@ -1,7 +1,5 @@
-﻿using System;
-using DevIO.Api.Controllers;
+﻿using DevIO.Api.Controllers;
 using DevIO.Business.Intefaces;
-using Elmah.Io.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -13,7 +11,8 @@ namespace DevIO.Api.V2.Controllers
     {
         private readonly ILogger _logger;
 
-        public TesteController(INotificador notificador, IUser appUser, ILogger<TesteController> logger) : base(notificador, appUser)
+        public TesteController(INotificador notificador, IUser appUser, ILogger<TesteController> logger) : base(
+            notificador, appUser)
         {
             _logger = logger;
         }
@@ -21,7 +20,6 @@ namespace DevIO.Api.V2.Controllers
         [HttpGet]
         public string Valor()
         {
-
             //throw new Exception("Error");
 
             //try

@@ -6,7 +6,7 @@ namespace DevIO.Business.Notificacoes
 {
     public class Notificador : INotificador
     {
-        private List<Notificacao> _notificacoes;
+        private readonly List<Notificacao> _notificacoes;
 
         public Notificador()
         {
